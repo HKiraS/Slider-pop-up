@@ -1,0 +1,52 @@
+[
+    {
+      "nome": "Criosfera Oculta",
+      "tags": ["Mistério", "Suspence", "Drama", "Protagonista Feminina", "Redenção"],
+      "sinopse": "Nina, uma jovem com o dom de controlar água e gelo, esconde um passado misterioso e doloroso. Envolta em segredos, ela enfrenta seus próprios demônios enquanto tenta superar traumas passados. Ao ser forçada a confrontar sua história, Nina descobre que sua habilidade é crucial para desvendar mistérios ancestrais e restaurar equilíbrio ao seu mundo."
+    },
+
+    {
+      "nome": "Segredos da Princesa Guerreira",
+      "tags": ["Guerra", "Traição", "Estratégia Militar", "Lealdade e sacrifício", "Estratégia", "Protagonista Feminina"],
+      "sinopse": "Durante uma guerra implacável, a princesa Liana, do poderoso império, enfrenta traições devastadoras. Em sua busca por lealdade, descobre segredos obscuros sobre sua família, desvendando uma trama sinistra por trás do conflito. Determinada a restaurar a paz e a verdade, ela enfrenta escolhas difíceis para proteger seu povo e desafiar o legado sombrio de sua linhagem."
+    },
+
+    {
+        "nome": "A Máscara da Redenção",
+        "tags": ["Vingança", "Manipulação", "Jogo de poder", "Assassinato", "Intriga política", "Protagonista Feminina"],
+        "sinopse": "Sob o véu da noite, Althea é uma assassina implacável em busca de vingança contra aqueles que prejudicaram ela e seu irmão. Em um jogo perigoso, ela assume identidades duplas, protegendo seu irmão enquanto elimina inimigos no reino. Entre o dever e a empatia, ela luta para preservar sua humanidade enquanto mergulha na escuridão da vingança."
+    },
+
+    {
+      "nome": "Os Segredos do Medo",
+      "tags": ["Mistério", "Suspence", "Adventure", "Perseguição", "Protagonista Feminina"],
+      "sinopse": "Em um mundo onde seu nome evoca medo, Lyra, uma jovem com poderes misteriosos, busca desvendar a razão por trás do temor das pessoas. Enquanto foge de caçadores de segredos obscuros, ela embarca em uma jornada para descobrir a verdade sobre sua linhagem e os dons que a tornam uma figura enigmática e temida."
+    },
+
+    {
+      "nome": "Herdeiro dos Elementos",
+      "tags": [ "Magia", "Fantasia", "Domínio elemental", "Poderes sobrenaturais", "Liderança", "Protagonista masculino"],
+
+      "sinopse": "Dotado da rara habilidade de dominar os quatro elementos, Akio busca erguer um reino onde todos vivam em harmonia. Contudo, ele enfrenta desafios inesperados ao confrontar criaturas elementais e oposição de outros dominadores. Akio percebe que unir os elementos não é apenas seu destino, mas um desafio que exigirá mais do que seu dom."
+    },
+
+    {
+        "nome": "Busca da Magia Suprema",
+        "tags": ["Magia", "Fantasia medieval", "Protagonista masculino"],
+
+        "sinopse": "Astor, um jovem mago determinado, embarca em uma jornada para encontrar uma magia capaz de derrotar o Rei Demônio, que assola o reino. Com um poder mágico modesto, ele busca artefatos e conhecimentos ancestrais enquanto enfrenta perigos sobrenaturais."
+    },
+
+    {
+      "nome": "Caminho do Mais Forte",
+      "tags": ["Honra", "Artes Marciais", "Aventura", "Protagonista masculino"],
+
+      "sinopse": "Kenji, um guerreiro murim habilidoso, embarca em uma jornada em busca do adversário mais forte. Ele desafia mestres de artes marciais e luta contra adversários poderosos, aprimorando suas técnicas em uma busca incansável pela verdadeira força."
+    },
+
+    {
+      "nome": "Revanche Real",
+      "tags": ["Vingança",  "Realeza", "Estratégia","Traição e lealdade", "Protagonista masculino"],
+      "sinopse": "Após o império devastar seu reino, Leon, filho do rei derrotado, retorna determinado a vingar sua família e seu povo. Com habilidades de combate afiadas e aliados improváveis, ele trilha um caminho de revanche contra o império."
+    }
+]

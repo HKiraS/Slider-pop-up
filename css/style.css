@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(38, 37, 47);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 30px 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*Slider*/
+
+.slider-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.slider-container .slider-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: auto;
+    height: 480px;
+    max-height: 100vh;
+    position: relative;
+    background-color: rgb(59, 58, 66);
+
+}
+
+.slider-container .slider-content .img-slider {
+    position: absolute;
+    width: clamp(200px, 300px, 300px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider-container .slider-content .img-slider.ativo {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+
+
+.slider-container .slider-content .radio-btns {
+    position: relative;
+    top: 92%;
+}
+
+.slider-container .slider-box {
+    display: inherit;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.slider-container .slider-box img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.slider-container .radio-btns input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.slider-container .radio-btns input[type="radio"]:hover {
+    background-color: rgb(41, 165, 41);
+}
+
+.slider-container .radio-btns input[type="radio"]:checked {
+    background-color: lime;
+}
+
+/*Modal*/
+
+#modal-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 3;
+    transition: .2s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:  0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#modal-container.ativo {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+#modal-container #modal-content {
+    width: clamp(280px, 80%, 900px);
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.5);
+    backdrop-filter: blur(10px);
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+    transition:  .4s ease-in-out;
+    transform: scale(0);
+}
+
+#modal-container.ativo #modal-content {
+    transform: scale(1);
+}
+
+#modal-container #modal-content #close-mdl-container {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    transition: .4s;
+}
+
+#close-mdl-container:hover {
+    color: lime;
+}
+
+#modal-container #modal-content img {
+    border-radius: 10px;
+    width: clamp(150px, 20%, 300px);
+}
+
+#modal-container #modal-content .info {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+    font-size: .8rem;
+}
+
+#modal-container #modal-content .info h2 {
+    color: lime;
+    font-size: 1.2rem;
+}
+
+
+#modal-container #modal-content .info #tags-modal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    font-size: .7rem;
+    margin-block: 10px;
+    overflow: hidden;
+}
+
+#modal-container #modal-content .info #tags-modal a, #tags-modal button {
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    padding: 5px 7.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#modal-container #modal-content .info #tags-modal a:hover, #tags-modal button:hover {
+    color: lime;
+    text-decoration: underline;
+}
+
+#modal-container #modal-content .info span {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: lime;
+}
+
+/*Responsivo*/
+
+@media (max-width: 320px) {
+    .slider-container .slider-content {
+        height: 330px;
+    }
+
+    .slider-container .slider-content .slider-box {
+        position: relative;
+        width: 90%;
+    }
+
+    .slider-container .slider-content .slider-box .img-slider {
+        min-width: 200px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+    <title>Sliders com Modais</title>
+</head>
+<body>
+    <h1>Sliders com modal</h1>
+    
+    <section class="slider-container">
+        <section class="slider-content" id="slider1">
+            <div class="slider-box">
+                <img src="img/PersonF1.jpg" alt="Criosfera Oculta" class="img-slider ativo">
+                <img src="img/PersonF2.jpg" alt="Segredos da Princesa Guerreira" class="img-slider">
+                <img src="img/PersonF3.jpg" alt="A Máscara da Redenção" class="img-slider">
+                <img src="img/PersonF4.jpg" alt="Os Segredos do Medo" class="img-slider">
+            </div>
+            <div class="radio-btns">
+                <input type="radio" name="btn-slider-1" id="radio1-1" data-index="0" checked>
+                <input type="radio" name="btn-slider-1" id="radio1-2" data-index="1">
+                <input type="radio" name="btn-slider-1" id="radio1-3" data-index="2">
+                <input type="radio" name="btn-slider-1" id="radio1-4" data-index="3">
+            </div>
+        </section>
+        <section class="slider-content" id="slider2">
+            <div class="slider-box">
+                <img src="img/PersonM1.jpg" alt="Herdeiro dos Elementos" class="img-slider ativo">
+                <img src="img/PersonM2.jpg" alt="Busca da Magia Suprema" class="img-slider">
+                <img src="img/PersonM3.jpg" alt="Caminho do Mais Forte" class="img-slider">
+                <img src="img/PersonM4.jpg" alt="Revanche Real" class="img-slider">
+            </div>
+            <div class="radio-btns">
+                <input type="radio" name="btn-slider-2" id="radio2-1" data-index="0" checked>
+                <input type="radio" name="btn-slider-2" id="radio2-2" data-index="1">
+                <input type="radio" name="btn-slider-2" id="radio2-3" data-index="2">
+                <input type="radio" name="btn-slider-2" id="radio2-4" data-index="3">
+            </div>
+        </section>
+    </section>
+    <div id="modal-container">
+        <div id="modal-content">
+            <button id="close-mdl-container">X</button>
+            <img src="" alt="" id="img-modal">
+            <div class="info">
+                <h2 id="title-modal"></h2>
+                <div id="tags-modal"></div>
+                <span>
+                    Sinopse: 
+                </span>
+                <p id="modal-synopsis"></p> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
